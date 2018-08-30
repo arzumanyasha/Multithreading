@@ -22,14 +22,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
-                android:id="@+id/startButton"
+                android:id="@+id/startButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Start" />
 
             <Button
-                android:id="@+id/cancelButton"
+                android:id="@+id/cancelButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -38,7 +38,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/countTextView"
+            android:id="@+id/countTextView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

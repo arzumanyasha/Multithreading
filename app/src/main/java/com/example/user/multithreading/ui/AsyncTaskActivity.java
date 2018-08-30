@@ -25,11 +25,11 @@ public class AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEv
     }
 
     private void setViews() {
-        mCounterTextView = findViewById(R.id.countTextView);
+        mCounterTextView = findViewById(R.id.countTextView1);
 
-        Button btnCreate = findViewById(R.id.createButton);
-        Button btnStart = findViewById(R.id.startButton);
-        Button btnCancel = findViewById(R.id.cancelButton);
+        Button btnCreate = findViewById(R.id.createButton1);
+        Button btnStart = findViewById(R.id.startButton1);
+        Button btnCancel = findViewById(R.id.cancelButton1);
 
         btnCreate.setOnClickListener(this);
         btnStart.setOnClickListener(this);
@@ -39,11 +39,11 @@ public class AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEv
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.createButton:
+            case R.id.createButton1:
                 mAsyncTask = new CounterAsyncTask(this);
                 break;
 
-            case R.id.startButton:
+            case R.id.startButton1:
                 if(mAsyncTask!=null && (!mAsyncTask.isCancelled()) &&
                         mAsyncTask.getStatus()!= AsyncTask.Status.RUNNING &&
                         mAsyncTask.getStatus() != AsyncTask.Status.FINISHED){
@@ -51,7 +51,7 @@ public class AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEv
                 }
                 break;
 
-            case R.id.cancelButton:
+            case R.id.cancelButton1:
                 if(mAsyncTask!=null){
                     mAsyncTask.cancel(true);
                 }
